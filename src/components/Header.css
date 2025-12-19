@@ -1,0 +1,96 @@
+:root {
+ --orange: #FF9D0D;
+ --text: #0f172a;
+ --muted: #475569;
+ --border: #e2e8f0;
+}
+.header {
+ background: #ffffff;
+ border-bottom: 1px solid var(--border);
+}
+.headerInner {
+ height: 50px;
+ padding: 0 15px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 18px;
+}
+/* Brand */
+.brand {
+ display: flex;
+ align-items: center;
+ gap:2px;
+ margin-left: 200px;
+}
+.brandMark {
+ /* width: 42px;
+ height: 42px; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #FF9D0D
+}
+.brandMark svg {
+ font-size: 42px;
+}
+.brandName {
+ font-size: 30px;
+ font-weight: 700;
+ color: var(--text);
+}
+/* Menu */
+.menu {
+ display: flex;
+ align-items: center;
+ gap: 22px;
+  margin-right: 150px;
+}
+.menu, .icon{
+display: flex;
+
+    
+}
+.menu a {
+ text-decoration: none;
+ color: var(--muted);
+ font-size: 14px;
+ font-weight: 500;
+ align-items: center;
+ display: flex;
+
+}
+.menu a:hover {
+ color: var(--text);
+}
+/* Actions */
+.actions {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.iconBtn {
+ width: 38px;
+ height: 38px;
+ border-radius: 10px;
+ border: 1px solid var(--border);
+ background: #ffffff;
+ cursor: pointer;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+.iconBtn svg {
+ font-size: 20px;
+ color: var(--text);
+}
+.contactBtn {
+ height: 38px;
+ padding: 0 16px;
+ border-radius: 50px;
+ border: none;
+ background: var(--orange);
+ color: #ffffff;
+ font-weight: 600;
+ cursor: pointer;
+}

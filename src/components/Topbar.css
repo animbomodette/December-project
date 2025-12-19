@@ -1,0 +1,93 @@
+:root {
+    --teal: #00BEAE;
+    --white: #ffffff;
+  }
+  
+  .top-bar {
+     background-color: var(--teal);
+     color: var(--white);
+    font-size: 13px;
+    width: 1280px;
+    margin: 5px;
+    padding:0 10px ;
+    height: 40px;
+  
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  /* left section + right section */
+  .left-side,
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+   }
+  
+  /* each item like clock+text or location+text */
+  /* .info,
+  .middle,
+  .language { 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  
+  /* Iconify icons */
+  .icon {
+    font-size: 12px;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+  }
+  
+  .info, .icon{
+    gap: 8px;
+  }
+
+  .middle{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+
+  }
+  .middle, .icon{
+    gap: 8px;
+  }
+  
+  /* socials */
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .right-side{
+    background-color: #FF9D0D;
+    height: 100%;
+    padding: 0 15px;
+    
+  }
+  
+  .socials svg {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* optional hover effect */
+  .socials svg:hover,
+  .language:hover {
+    opacity: 0.85;
+  }
+  .right-side, .language{
+    display: flex;
+    align-items: center;
+  }
+ .language,.flag{
+    gap: 2px;
+   border-radius:10px ; 
+  }

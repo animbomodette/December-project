@@ -1,0 +1,134 @@
+.features {
+
+  background: #ffffff;
+
+  padding: 40px 0 60px;
+
+}
+
+.featuresInner {
+
+  padding: 0 24px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+}
+
+.featureCard {
+
+  background: #f8fafc;
+
+  border-radius: 18px;
+
+  padding: 22px 20px;
+
+  border: 1px solid #eef2f7;
+
+  min-height: 170px;
+
+}
+
+.featureIconWrap {
+
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 999px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(42, 163, 154, 0.12);
+
+}
+
+.featureLogo {
+
+  width: 22px;
+
+  height: 22px;
+
+  object-fit: contain;
+  background-color: #2aa39a;
+
+}
+
+.featureTitle {
+
+  margin: 14px 0 0;
+
+  font-size: 13px;
+
+  letter-spacing: 0.6px;
+
+  text-transform: uppercase;
+
+  color: #0f172a;
+
+  font-weight: 800;
+
+}
+
+.featureText {
+
+  margin: 10px 0 0;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  color: #64748b;
+
+}
+
+/* middle card active */
+
+.featureCardActive {
+
+  background: #2aa39a;
+
+  border: none;
+
+}
+
+.featureIconWrapActive {
+
+  background: rgba(255, 255, 255, 0.22);
+
+}
+
+.featureTitleActive,
+
+.featureTextActive {
+
+  color: #ffffff;
+
+}
+
+ 
+ 
+
+  .featuresInner {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+.featurelogo .startlogo{
+    background-color: #2aa39a;
+
+}
+
+ 
+ 

@@ -1,0 +1,268 @@
+.hero {
+ background: #fff7ee;
+ /* padding: 52px 0; */
+ width: 1280px;
+ height: 400px;
+}
+.heroInner {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 34px;
+ padding: 0 28px;
+}
+/* LEFT */
+.heroLeft {
+ /* max-width: 520px; */
+}
+.heroTitle {
+margin-left: 200px;
+ font-size: 35px;
+ font-weight: 800;
+ color: #0f172a;
+ display: flex;
+ align-items: center;
+ margin-top: 70px;
+ 
+}
+.heroText {
+ margin-left: 200px;
+ color: #475569;
+ font-size: 10px
+}
+.heroCtas {
+ margin-top: 22px;
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ margin-left: 200px;
+}
+.primaryBtn {
+ height: 42px;
+ padding: 0 18px;
+ border: none;
+ border-radius: 999px;
+ background: #f0a24a;
+ color: #ffffff;
+ font-weight: 600;
+ cursor: pointer;
+}
+.watchBtn {
+ background: transparent;
+ border: none;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ cursor: pointer;
+ color: #0f172a;
+ font-weight: 600;
+ padding: 0;
+}
+.playCircle {
+ width: 38px;
+ height: 38px;
+ border-radius: 999px;
+ background: #2aa39a;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ transition: transform 0.2s ease;
+}
+.watchBtn:hover .playCircle {
+ transform: scale(1.05);
+}
+.playCircle svg {
+ font-size: 18px;
+}
+/* underline for Watch Now like template */
+.watchBtn span:last-child {
+ position: relative;
+}
+.watchBtn span:last-child::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -4px;
+ width: 100%;
+ height: 2px;
+ background: rgba(15, 23, 42, 0.35);
+ border-radius: 999px;
+}
+/* RIGHT */
+.heroRight {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+}
+.heroArt {
+ position: relative;
+ width: 640px;
+ height: 360px;
+}
+/* LAYERS */
+.blob {
+ z-index: 1;
+}
+.tealPanel {
+ z-index: 2;
+}
+.decor {
+ z-index: 3;
+}
+.kidImg {
+ z-index: 4;
+}
+.badge {
+ z-index: 5;
+}
+/* SHAPES */
+.blob {
+ position: absolute;
+ border-radius: 50%;
+}
+/* ORANGE circle behind boy */
+.blobOrange {
+ width: 235px;
+ height: 235px;
+ background: #f0a24a;
+ opacity: 0.85;
+ /* tuned to sit behind boy */
+ left: 270px;
+ top: 34px;
+}
+/* TEAL circle behind girl */
+.blobTeal {
+ width: 275px;
+ height: 275px;
+ background: #2aa39a;
+ opacity: 0.92;
+ right: 52px;
+ bottom: 22px;
+}
+/* TEAL rounded panel (girl sits on this in Figma) */
+.tealPanel {
+ position: absolute;
+ width: 235px;
+ height: 210px;
+ right: 32px;
+ bottom: 10px;
+ background: #2aa39a;
+ border-radius: 26px;
+ opacity: 0.92;
+}
+/* PEOPLE */
+.kidImg {
+ position: absolute;
+ object-fit: contain;
+}
+/* boy centered in orange circle */
+.kidImg.boy {
+ width: 175px;
+ left: 300px;
+ top: 40px;
+}
+/* girl sits on teal panel */
+.kidImg.grad {
+ width: 255px;
+ right: 22px;
+ bottom: 0px;
+}
+/* DECORATIONS */
+.decor {
+ position: absolute;
+ object-fit: contain;
+}
+/* birds/branch = extreme left top */
+.birds {
+ width: 175px;
+ left: -550px; 
+ display: flex;
+ justify-content: left;
+}
+/* sun = faint top-right */
+.sun {
+ width: 100px;
+ right: 8px;
+ top: 10px;
+ opacity: 0.22;
+}
+
+.cross {
+ width: 26px;
+ left: 455px;
+ top: 86px;
+ opacity: 0.8;
+}
+/* cloud sits near badge area */
+.cloud {
+ width: 72px;
+ left: 80px;
+ bottom: 10px;
+ opacity: 0.95;
+ margin-top: 100px;
+
+}
+/* BADGES */
+.badge {
+ position: absolute;
+ background: #ffffff;
+ border-radius: 14px;
+ padding: 10px 12px;
+ box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+ display: grid;
+ gap: 2px;
+ min-width: 150px;
+}
+.badge strong {
+ font-size: 18px;
+ color: #0f172a;
+}
+.badge span {
+ font-size: 12px;
+ color: #475569;
+}
+/* top badge near upper right */
+.badgeTop {
+ right: 14px;
+ top: 68px;
+}
+/* bottom badge between boy + girl */
+.badgeBottom {
+ left: 340px;
+ bottom: 56px;
+}
+/* reviewers row (placeholder dots for now) */
+.miniAvatars {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ margin-top: 6px;
+}
+.dot {
+ width: 16px;
+ height: 16px;
+ border-radius: 999px;
+ display: inline-block;
+ border: 2px solid #ffffff;
+}
+.dot1 {
+ background: #2aa39a;
+}
+.dot2 {
+ background: #f0a24a;
+}
+.dot3 {
+ background: #94a3b8;
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+ .heroInner {
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .heroArt {
+   width: 100%;
+   max-width: 640px;
+ }
+}
